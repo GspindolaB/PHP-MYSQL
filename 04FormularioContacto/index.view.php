@@ -17,25 +17,31 @@
                 <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="POST">
                 <div class="row">
                     <div class="col-12 nombre">
-                        <input type="text" name="nombre" id="nombre" placeholder="Nombre:">
+                        <input type="text" name="nombre" id="nombre" placeholder="Nombre:" value="<?php if(!$enviado && isset($nombre)) echo $nombre; ?>">
                     </div>
                     <div class="col-12 correo">
-                        <input type="email" name="correo" id="correo" placeholder="Correo:">
+                        <input type="email" name="correo" id="correo" placeholder="Correo:" value="<?php if(!$enviado && isset($correo)) echo $correo; ?>">
                     </div>
                     <div class="col-12 mensaje">
-                        <textarea name="mensaje" id="mensaje" placeholder="Escribenos un mensaje"></textarea>
+                        <textarea name="mensaje" id="mensaje" placeholder="Escribenos un mensaje"><?php if(!$enviado && isset($mensaje)) echo $mensaje; ?></textarea>
                     </div>
-                    <!--
+                    
                     <div class="col-12">
+                    <?php if (!empty($errores)) :  ?>
                         <div class="errores">
-                        <p>Por favor ingresa tu nombre.</p>
+                        <!--<p>Por favor ingresa tu nombre.</p>
                         <p>Por favor ingresa un correo.</p>
-                        <p>Es necesario escribir un mensaje</p>
+                        <p>Es necesario escribir un mensaje</p>-->
+                        <?php echo $errores; ?>
                         </div>
+                    <?php elseif($enviado): ?>
+                        <div class="success">
+                            <p>Enviado Correctamente</p>
+                        </div>
+                    <?php endif ?>
                     </div>
-                    -->
                     <div class="col-12 boton d-flex justify-content-end">
-                        <button>Enviar correo</button>
+                        <input type="submit" value="Enviar Correo" name="submit">
                     </div>
                 </div>
                 </form>

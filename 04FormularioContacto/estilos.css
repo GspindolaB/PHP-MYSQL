@@ -49,8 +49,15 @@ body {
     color: red;
     padding: 10px 5px;
 }
+.success{
+    border: 1px solid green;
+    margin-top: 10px;
+    background: rgb(83, 209, 83);
+    color: green;
+    padding: 10px 5px;
+}
 
-.boton button {
+.boton input[type="submit"] {
     margin: 10px 0;
     font-size: 20px;
     line-height: 20px;
@@ -62,6 +69,6 @@ body {
     cursor: pointer;
 }
 
-.boton button:hover {
+.boton input[type="submit"]:hover {
     background: rgb(231, 101, 53);
 }
