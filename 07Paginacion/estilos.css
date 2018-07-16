@@ -1,0 +1,38 @@
+.titulo {
+    color: rgb(228, 166, 52);
+    font-family: 'Roboto', sans-serif;
+}
+
+.lista {
+    list-style: none;
+}
+
+.lista li {
+    border-bottom: 1px solid rgb(185, 184, 184);
+    padding: 15px 0;
+    color: rgb(95, 93, 93);
+    font-size: 18px;
+}
+
+.pagination {
+    padding-left: 50px;
+}
+
+.paginacion li a {
+    background: rgb(95, 95, 95);
+    color: #fff;
+    margin: 0 5px;
+    height: 100%;
+    ;
+}
+
+.paginacion li a:hover {
+    background: rgb(228, 166, 52);
+    color: #fff;
+}
+
+@media only screen and(max-width: 768px) {
+    .paginacion li a {
+        width: 100%;
+    }
+}
