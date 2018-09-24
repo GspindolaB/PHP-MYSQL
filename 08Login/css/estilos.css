@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    background: rgb(15, 4, 56);
+}
+
+h1 {
+    color: orange;
+}
+
+article p {
+    color: rgb(36, 35, 35);
+}
+
+a {
+    color: orange;
+    text-decoration: none;
+}
+
+hr {
+    height: 5px;
+    color: orange;
+}
