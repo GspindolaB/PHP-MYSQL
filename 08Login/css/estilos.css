@@ -25,6 +25,19 @@ a {
 }
 
 hr {
-    height: 5px;
     color: orange;
+}
+
+.icono {
+    color: #fff;
+    font-size: 20px;
+}
+
+.fondo {
+    background: violet;
+}
+
+ul {
+    list-style: none;
+    color: #ffF;
 }

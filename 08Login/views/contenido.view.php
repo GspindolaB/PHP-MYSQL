@@ -20,6 +20,7 @@
             <div class="col-12 col-md-6 col-lg-4">
                 <a href="cerrar.php">Cerrar Sesión</a>
                 <hr>
+                <hr class="bg-white">
                 <article class="bg-white p-3">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum eaque nemo cumque. Dolorem, consequuntur? Unde quod omnis dolor molestias. Nisi ratione molestias eos officiis eum labore officia porro libero deleniti!</p>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad velit cum saepe, distinctio eveniet amet nobis maiores placeat qui, iure itaque accusantium quod vero, quo dignissimos molestiae recusandae voluptatibus fugiat!</p>
