@@ -45,7 +45,11 @@
     <main>
         <section class="jumbotron bg-white text-center mb-0">
             <div class="container">
-                <h1 class="display-4">Foto: 1.jpg</h1>
+                <h1 class="display-4">Foto: <?php if(!empty($foto['titulo'])){
+                    echo $foto['titulo'];
+                }else{
+                    echo $foto['imagen'];
+                } ?></h1>
             </div>
         </section>
         <div class="py-5 bg-light">
@@ -53,13 +57,13 @@
                 <div class="row justify-content-center">
                     <div class="col-sm-6 col-md-4">
                         <div class="card-mb-4">
-                            <img src="img/1.jpg" class="card-img-top" alt="">
+                            <img src="img/<?php echo $foto['imagen']; ?>" class="card-img-top" alt="img/<?php echo $foto['texto']; ?>">
                             <div class="card-body">
                                 <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur facere, aperiam corrupti similique ex perspiciatis.</p>
                                 <div class="d-flex justify-content-between align-items-center">
                                     <div class="btn-group">
-                                        <button class="btn btn-sm btn-outline-secondary">Ver</button>
-                                        <button class="btn btn-sm btn-outline-secondary">Editar</button>
+                                        <button class="btn btn-sm btn-outline-secondary"><a href="index.php">Regresar</a></button>
+                                        <button class="btn btn-sm btn-outline-secondary"><a href="subir.php">Subir más</a></button>
                                     </div>
                                     <small class="text-muted">9 minutos</small>
                                 </div>

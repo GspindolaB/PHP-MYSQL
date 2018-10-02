@@ -77,14 +77,17 @@
                 <?php endforeach; ?>
                 </div>
                 <div class="row mt-3">
-                <div class="col-6">
+                    <div class="col-6">
                         <ul class="pagination pagination-lg d-flex justify-content-start">
-                            <li class="page-item"><a class="page-link" href="#"><span aria-hidden="true"><- Página Anterior</span></a></li>
+                        <?php if($pagina_actual > 1): ?>
+                            <li class="page-item"><a class="page-link" href="index.php?p=<?php echo $pagina_actual-1; ?>"><span aria-hidden="true"><- Página Anterior</span></a></li>
+                        <?php endif; ?>
                         </ul>
                     </div>
                     <div class="col-6">
                         <ul class="pagination pagination-lg d-flex justify-content-end">
-                            <li class="page-item"><a class="page-link" href="#"><span aria-hidden="true">Página Siguiente -></span></a></li>
+                        <?php if($total_paginas != $pagina_actual): ?>
+                            <li class="page-item"><a class="page-link" href="index.php?p=<?php echo $pagina_actual+1; ?>"><span aria-hidden="true">Página Siguiente -></span></a></li>
                             <!--<li class="page-item active"><a class="page-link" href="#">1</a></li>
                             <li class="page-item"><a class="page-link" href="#">2</a></li>
                             <li class="page-item"><a class="page-link" href="#">3</a></li>
@@ -92,6 +95,7 @@
                             <li class="page-item"><a class="page-link" href="#">5</a></li>
                             <li class="page-item"><a class="page-link" href="#">6</a></li>
                             <li class="page-item"><a class="page-link" href="#"><span aria-hidden="true ">>></span></a></li>-->
+                            <?php endif; ?>
                         </ul>
                     </div>
                 </div>
