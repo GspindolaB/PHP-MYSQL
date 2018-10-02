@@ -48,17 +48,20 @@
                 <h1 class="display-4">Album de fotografias</h1>
                 <p class="lead text-muted">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere eveniet recusandae perferendis quo aliquid voluptates nobis repellendus doloribus repudiandae? Quidem provident dolore accusamus tempora in veniam pariatur, nihil velit nisi?</p>
                 <p>
-                    <a href="#" class="btn btn-primary my-2">Main call to action</a>
-                    <a href="#" class="btn btn-secondary my-2">Secondary call to action</a>
+                    <a href="#" class="btn btn-primary my-2">Ir a la galeria.</a>
+                    <a href="subir.php" class="btn btn-secondary my-2">Subir foto.</a>
                 </p>
             </div>
         </section>
         <div class="py-5 bg-light">
             <div class="container">
                 <div class="row">
+                <?php foreach($fotos as $foto): ?>
                     <div class="col-sm-6 col-md-4">
                         <div class="card-mb-4">
-                            <img src="img/1.jpg" class="card-img-top" alt="">
+                            <a href="foto.php?id=<?php echo $foto['id']; ?>">
+                                <img src="img/<?php echo $foto['imagen'] ?>" class="card-img-top" alt="<?php echo $foto['texto'] ?>">
+                            </a>
                             <div class="card-body">
                                 <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur facere, aperiam corrupti similique ex perspiciatis.</p>
                                 <div class="d-flex justify-content-between align-items-center">
@@ -71,129 +74,15 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-6 col-md-4">
-                        <div class="card-mb-4">
-                            <img src="img/2.jpg" class="card-img-top" alt="">
-                            <div class="card-body">
-                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur facere, aperiam corrupti similique ex perspiciatis.</p>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div class="btn-group">
-                                        <button class="btn btn-sm btn-outline-secondary">Ver</button>
-                                        <button class="btn btn-sm btn-outline-secondary">Editar</button>
-                                    </div>
-                                    <small class="text-muted">9 minutos</small>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-4">
-                        <div class="card-mb-4">
-                            <img src="img/3.jpg" class="card-img-top" alt="">
-                            <div class="card-body">
-                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur facere, aperiam corrupti similique ex perspiciatis.</p>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div class="btn-group">
-                                        <button class="btn btn-sm btn-outline-secondary">Ver</button>
-                                        <button class="btn btn-sm btn-outline-secondary">Editar</button>
-                                    </div>
-                                    <small class="text-muted">9 minutos</small>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-4">
-                        <div class="card-mb-4">
-                            <img src="img/4.jpg" class="card-img-top" alt="">
-                            <div class="card-body">
-                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur facere, aperiam corrupti similique ex perspiciatis.</p>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div class="btn-group">
-                                        <button class="btn btn-sm btn-outline-secondary">Ver</button>
-                                        <button class="btn btn-sm btn-outline-secondary">Editar</button>
-                                    </div>
-                                    <small class="text-muted">9 minutos</small>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-4">
-                        <div class="card-mb-4">
-                            <img src="img/5.jpg" class="card-img-top" alt="">
-                            <div class="card-body">
-                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur facere, aperiam corrupti similique ex perspiciatis.</p>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div class="btn-group">
-                                        <button class="btn btn-sm btn-outline-secondary">Ver</button>
-                                        <button class="btn btn-sm btn-outline-secondary">Editar</button>
-                                    </div>
-                                    <small class="text-muted">9 minutos</small>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-4">
-                        <div class="card-mb-4">
-                            <img src="img/6.jpg" class="card-img-top" alt="">
-                            <div class="card-body">
-                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur facere, aperiam corrupti similique ex perspiciatis.</p>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div class="btn-group">
-                                        <button class="btn btn-sm btn-outline-secondary">Ver</button>
-                                        <button class="btn btn-sm btn-outline-secondary">Editar</button>
-                                    </div>
-                                    <small class="text-muted">9 minutos</small>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-4">
-                        <div class="card-mb-4">
-                            <img src="img/7.jpg" class="card-img-top" alt="">
-                            <div class="card-body">
-                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur facere, aperiam corrupti similique ex perspiciatis.</p>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div class="btn-group">
-                                        <button class="btn btn-sm btn-outline-secondary">Ver</button>
-                                        <button class="btn btn-sm btn-outline-secondary">Editar</button>
-                                    </div>
-                                    <small class="text-muted">9 minutos</small>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-4">
-                        <div class="card-mb-4">
-                            <img src="img/8.jpg" class="card-img-top" alt="">
-                            <div class="card-body">
-                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur facere, aperiam corrupti similique ex perspiciatis.</p>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div class="btn-group">
-                                        <button class="btn btn-sm btn-outline-secondary">Ver</button>
-                                        <button class="btn btn-sm btn-outline-secondary">Editar</button>
-                                    </div>
-                                    <small class="text-muted">9 minutos</small>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-4">
-                        <div class="card-mb-4">
-                            <img src="img/11.jpg" class="card-img-top" alt="">
-                            <div class="card-body">
-                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur facere, aperiam corrupti similique ex perspiciatis.</p>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div class="btn-group">
-                                        <button class="btn btn-sm btn-outline-secondary">Ver</button>
-                                        <button class="btn btn-sm btn-outline-secondary">Editar</button>
-                                    </div>
-                                    <small class="text-muted">9 minutos</small>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <?php endforeach; ?>
                 </div>
                 <div class="row mt-3">
-                    <div class="col">
+                <div class="col-6">
+                        <ul class="pagination pagination-lg d-flex justify-content-start">
+                            <li class="page-item"><a class="page-link" href="#"><span aria-hidden="true"><- Página Anterior</span></a></li>
+                        </ul>
+                    </div>
+                    <div class="col-6">
                         <ul class="pagination pagination-lg d-flex justify-content-end">
                             <li class="page-item"><a class="page-link" href="#"><span aria-hidden="true">Página Siguiente -></span></a></li>
                             <!--<li class="page-item active"><a class="page-link" href="#">1</a></li>

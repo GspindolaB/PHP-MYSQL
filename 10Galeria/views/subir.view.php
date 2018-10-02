@@ -64,6 +64,9 @@
                             <div class="form-group">
                                 <label for="descripcion">Descripción de la imagen</label>
                                 <textarea name="descripcion" class="form-control" id="descripcion" placeholder="Aqui va la descripción"></textarea>
+                                <?php if(isset($error)): ?>
+                                <p class="text-white bg-danger"><?php echo $error; ?></p>
+                                <?php endif; ?>
                              </div>
                              <div class="form-group">
                                  <input type="submit" value="Enviar" class="btn btn-success">
