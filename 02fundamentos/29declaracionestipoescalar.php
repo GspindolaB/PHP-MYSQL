@@ -1,5 +1,5 @@
 <?php
-//
+//Es estricto con los tipos de datos
 declare(strict_types=1);
 function cuadrado(int $numero){
     return $numero * $numero;
