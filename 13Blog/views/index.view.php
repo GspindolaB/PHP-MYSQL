@@ -16,7 +16,7 @@
         <!-- Primer post -->
         <div class="post">
             <article>
-                <h2 class="titulo">Titulo del articulo</h2>
+                <h2 class="titulo"><a href="#">Titulo del articulo</a></h2>
                 <p class="fecha">09 de Enero del 2016</p>
                 <div class="thumb">
                     <a href="#"><img src="img/1.png" alt=""></a>
@@ -28,7 +28,7 @@
         <!-- Segundo post -->
         <div class="post">
             <article>
-                <h2 class="titulo">Titulo del articulo</h2>
+            <h2 class="titulo"><a href="#">Titulo del articulo</a></h2>
                 <p class="fecha">09 de Enero del 2016</p>
                 <div class="thumb">
                     <a href="#"><img src="img/2.png" alt=""></a>
