@@ -12,7 +12,7 @@ $blog_config = array(
 );
 $blog_admin = array(
     'usuario'=>'Guillermo',
-    'password'=>'123456789'
+    'password'=>12345
 );
 
 

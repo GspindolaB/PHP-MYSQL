@@ -1,6 +1,7 @@
 <?php require 'views/header.php'; ?>
     <!--Contenido de todos los post -->
     <div class="contenedor">
+    <h2><?php echo $titulo; ?></h2>
         <!-- Primer post -->
         <?php foreach($resultados as $post): ?>
         <div class="post">

@@ -21,7 +21,7 @@
                 <div class="thumb">
                     <img src="img/<?php echo $post['Thumb']; ?>" alt="">
                 </div>
-                <p class="extracto"><?php echo $post['Texto']; ?></p>
+                <p class="extracto"><?php echo nl2br($post['Texto']); ?></p>
             </article>
         </div>
     </div>
