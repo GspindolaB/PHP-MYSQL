@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald" rel="stylesheet"> 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
-    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="<?php echo RUTA; ?>css/estilos.css">
     <title>Blog</title>
 </head>
 <body>
