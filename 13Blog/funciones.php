@@ -28,4 +28,26 @@ function obtenerPost($post_por_pagina, $conexion){
     return $statement->fetchAll();
 }
 
+function id_articulo($id){
+    return (int)limpiarDatos($id);
+}
+
+function obtenerPostPorId($conexion, $id_articulo){
+    $sentencia = $conexion->query("SELECT * FROM Articulos WHERE Id = $id_articulo LIMIT 1");
+    $sentencia = $sentencia->fetchAll();
+    return ($sentencia) ? $sentencia : false;
+}
+
+function fecha($fecha){
+    $timestamp = strtotime($fecha);
+    $meses = array('Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre',
+    'Octubre', 'Noviembre', 'Diciembre');
+
+    $dia = date('d', $timestamp);
+    $mes = date('m', $timestamp) - 1;
+    $anio = date('Y', $timestamp);
+    $fecha = "$dia de " . $meses[$mes] . " del $anio";
+    return $fecha;
+}
+
 ?>
