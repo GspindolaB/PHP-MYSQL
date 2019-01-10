@@ -1,8 +1,8 @@
-    <?php require 'views/header.php'; ?>
+<?php require 'views/header.php'; ?>
     <!--Contenido de todos los post -->
     <div class="contenedor">
         <!-- Primer post -->
-        <?php foreach($posts as $post): ?>
+        <?php foreach($resultados as $post): ?>
         <div class="post">
             <article>
                 <h2 class="titulo"><a href="single.php?id=<?php echo $post['Id']; ?>"><?php echo $post['Titulo']; ?></a></h2>
