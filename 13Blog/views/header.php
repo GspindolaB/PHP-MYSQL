@@ -22,9 +22,9 @@
                 </form>
                 <nav class="menu">
                     <ul>
-                        <li><i><a href="#" class="fab fa-twitter"></i></a></li>
-                        <li><i><a href="#" class="fab fa-facebook"></i></a></li>
-                        <li><i><a href="#" class="icono fas fa-envelope-square"></i></a></li>
+                        <li><i><a href="#" class="fab fa-twitter"></a></i></li>
+                        <li><i><a href="#" class="fab fa-facebook"></a></i></li>
+                        <li><i><a href="#" class="icono fas fa-envelope-square"></a></i></li>
                     </ul>
                 </nav>
             </div>

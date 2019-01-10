@@ -14,29 +14,21 @@
     <!--Contenido de todos los post -->
     <div class="contenedor">
         <!-- Primer post -->
+        <?php foreach($posts as $post): ?>
         <div class="post">
             <article>
-                <h2 class="titulo"><a href="#">Titulo del articulo</a></h2>
-                <p class="fecha">09 de Enero del 2016</p>
+                <h2 class="titulo"><a href="single.php?id=<?php echo $post['Id']; ?>"><?php echo $post['Titulo']; ?></a></h2>
+                <p class="fecha"><?php echo $post['Fecha']; ?></p>
                 <div class="thumb">
-                    <a href="#"><img src="img/1.png" alt=""></a>
+                    <a href="single.php?id=<?php echo $post['Id']; ?>"><img src="img/<?php echo $post['Thumb']; ?>" alt=""></a>
                 </div>
-                <p class="extracto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, alias?</p>
-                <a href="#" class="continuar">Continuar leyendo.</a>
+                <p class="extracto"><?php echo $post['Extracto'] ?></p>
+                <a href="single.php?id=<?php echo $post['Id']; ?>" class="continuar">Continuar leyendo.</a>
             </article>
         </div>
+        <?php endforeach; ?>
         <!-- Segundo post -->
-        <div class="post">
-            <article>
-            <h2 class="titulo"><a href="#">Titulo del articulo</a></h2>
-                <p class="fecha">09 de Enero del 2016</p>
-                <div class="thumb">
-                    <a href="#"><img src="img/2.png" alt=""></a>
-                </div>
-                <p class="extracto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, alias?</p>
-                <a href="#" class="continuar">Continuar leyendo.</a>
-            </article>
-        </div>
+        
         <!-- Paginacion -->
         <?php require 'paginacion.php'; ?>
     </div>
