@@ -5,7 +5,8 @@ btn.addEventListener('click', function(){
     //Se crea una instancia
     var peticion = new XMLHttpRequest();
     //Se realiza peticion para devolver el archivo JSON
-    peticion.open('GET', 'http://www.json-generator.com/api/json/get/bPQZsmfBwy?indent=2');
+    //peticion.open('GET', 'http://www.json-generator.com/api/json/get/bPQZsmfBwy?indent=2');
+    peticion.open('GET', 'php/usuarios.php');
     //Habiliar el icono 
     loader.classList.add('active');
     //Ejecuta una funcion cuando el codigo ya cargo
