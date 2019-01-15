@@ -45,3 +45,13 @@ var amigos = [
 //Acceder al JSON
 console.log(amigos[0].pais);
 
+/** JSON GENERATOR
+ * [
+  '{{repeat(20)}}',
+  {
+    id: '{{objectId()}}',
+    nombre : '{{firstName()}}'
+  }
+]
+ */
+
